@@ -19,8 +19,8 @@ The system uses microcontroller-based sensor logging, IMU/environmental sensing,
 - [x] Created GitHub repository
 - [x] Set up project folder structure
 - [x] Created parts inventory file
-- [ ] Verify all purchased components
-- [ ] Complete microcontroller blink test
+- [x] Verify all purchased components
+- [x] Complete microcontroller blink test
 - [ ] Read first IMU sensor data
 - [ ] Log sensor data to file
 - [ ] Analyze sensor data using Python
@@ -57,9 +57,4 @@ autonomous-sensor-payload/
 └── docs/
     └── progress_photos/
 
-### Checkpoint 1 — Pico W Setup
-- Installed MicroPython on the Raspberry Pi Pico W.
-- Connected the Pico W to Thonny.
-- Verified board functionality using the onboard LED blink test.
-- Confirmed the development environment is ready for sensor integration.
 
