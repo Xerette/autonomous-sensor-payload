@@ -56,3 +56,10 @@ autonomous-sensor-payload/
 │   └── ltspice/
 └── docs/
     └── progress_photos/
+
+### Checkpoint 1 — Pico W Setup
+- Installed MicroPython on the Raspberry Pi Pico W.
+- Connected the Pico W to Thonny.
+- Verified board functionality using the onboard LED blink test.
+- Confirmed the development environment is ready for sensor integration.
+
