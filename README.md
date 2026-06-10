@@ -26,11 +26,12 @@ The system uses microcontroller-based sensor logging, IMU/environmental sensing,
 * Detected the BME280 successfully at I2C address `0x77` / decimal `119`.
 * Successfully read temperature, pressure, and humidity data from the BME280 sensor.
 * Verified environmental sensor data output through Thonny using MicroPython.
+* Streamed BME280 temperature, pressure, and humidity readings in CSV format for easier data logging and analysis.
 
 ### In Progress
 
-- Format BME280 readings into CSV-style output.
-- Begin logging sensor data for analysis.
+- Capture serial CSV output from Thonny into a local `.csv` file.
+- Generate first Python plots from BME280 environmental sensor data.
 
 ### Upcoming
 
