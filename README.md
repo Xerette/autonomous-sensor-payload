@@ -15,8 +15,6 @@ The system uses microcontroller-based sensor logging, IMU/environmental sensing,
 - Document the engineering process through test procedures, plots, and technical reports.
 
 ## Current Status
-## Current Status
-
 ### Completed
 
 * Created GitHub repository and initial project structure.
@@ -26,12 +24,13 @@ The system uses microcontroller-based sensor logging, IMU/environmental sensing,
 * Confirmed Pico W functionality after soldering by repeating the onboard LED blink test.
 * Wired the SparkFun BME280 atmospheric sensor to the Pico W using I2C.
 * Detected the BME280 successfully at I2C address `0x77` / decimal `119`.
+* Successfully read temperature, pressure, and humidity data from the BME280 sensor.
+* Verified environmental sensor data output through Thonny using MicroPython.
 
 ### In Progress
 
-* Read temperature, humidity, and pressure data from the BME280.
-* Save environmental sensor readings in a structured format.
-* Begin Python-based data analysis and plotting.
+- Format BME280 readings into CSV-style output.
+- Begin logging sensor data for analysis.
 
 ### Upcoming
 
@@ -47,7 +46,7 @@ The system uses microcontroller-based sensor logging, IMU/environmental sensing,
 - [x] Created parts inventory file
 - [x] Verify all purchased components
 - [x] Complete microcontroller blink test
-- [ ] Read first IMU sensor data
+- [x] Read first BME sensor data
 - [ ] Log sensor data to file
 - [ ] Analyze sensor data using Python
 - [ ] Create KiCad schematic
