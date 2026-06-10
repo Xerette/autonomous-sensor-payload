@@ -66,21 +66,23 @@ The system uses microcontroller-based sensor logging, IMU/environmental sensing,
 - Technical documentation
 - Git/GitHub
 
-## Repository Structure
+## Initial Results
+
+The first environmental sensing milestone was completed using a Raspberry Pi Pico W and SparkFun BME280 atmospheric sensor.
+
+A 60-second dataset was collected for:
+- Temperature
+- Pressure
+- Humidity
+
+The sensor was connected over I2C and detected at address `0x77` / decimal `119`.
+
+Python analysis scripts were used to:
+- Generate temperature, pressure, and humidity plots
+- Calculate mean, standard deviation, minimum, maximum, and drift over the test period
+
+Generated outputs are stored in:
 
 ```text
-autonomous-sensor-payload/
-├── README.md
-├── bom/
-│   └── parts_inventory.md
-├── firmware/
-├── python_analysis/
-├── data/
-├── figures/
-├── hardware/
-│   ├── kicad/
-│   └── ltspice/
-└── docs/
-    └── progress_photos/
-
+data/processed/
 
