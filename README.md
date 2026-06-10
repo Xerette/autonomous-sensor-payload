@@ -15,6 +15,32 @@ The system uses microcontroller-based sensor logging, IMU/environmental sensing,
 - Document the engineering process through test procedures, plots, and technical reports.
 
 ## Current Status
+## Current Status
+
+### Completed
+
+* Created GitHub repository and initial project structure.
+* Installed MicroPython on the Raspberry Pi Pico W.
+* Verified Pico W functionality using the onboard LED blink test.
+* Soldered male header pins onto the Pico W for breadboard prototyping.
+* Confirmed Pico W functionality after soldering by repeating the onboard LED blink test.
+* Wired the SparkFun BME280 atmospheric sensor to the Pico W using I2C.
+* Detected the BME280 successfully at I2C address `0x77` / decimal `119`.
+
+### In Progress
+
+* Read temperature, humidity, and pressure data from the BME280.
+* Save environmental sensor readings in a structured format.
+* Begin Python-based data analysis and plotting.
+
+### Upcoming
+
+* Add CSV logging.
+* Add IMU data collection when the IMU is available.
+* Analyze sensor noise, drift, calibration, and filtering.
+* Create KiCad schematic.
+* Run LTspice simulation.
+* Write final technical report.
 
 - [x] Created GitHub repository
 - [x] Set up project folder structure
