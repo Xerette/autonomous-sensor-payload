@@ -27,11 +27,11 @@ The system uses microcontroller-based sensor logging, IMU/environmental sensing,
 * Successfully read temperature, pressure, and humidity data from the BME280 sensor.
 * Verified environmental sensor data output through Thonny using MicroPython.
 * Streamed BME280 temperature, pressure, and humidity readings in CSV format for easier data logging and analysis.
+* Calculated basic summary statistics for the 60-second BME280 dataset, including mean, standard deviation, minimum, maximum, and drift.
 
 ### In Progress
 
-- Capture serial CSV output from Thonny into a local `.csv` file.
-- Generate first Python plots from BME280 environmental sensor data.
+- Interpret BME280 sensor stability using the generated plots and summary statistics.
 
 ### Upcoming
 
