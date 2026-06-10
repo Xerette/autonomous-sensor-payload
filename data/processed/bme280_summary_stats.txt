@@ -1,0 +1,24 @@
+BME280 60-Second Sensor Data Summary
+====================================
+
+temperature_C
+Mean: 23.3603
+Standard deviation: 0.0146
+Minimum: 23.3300
+Maximum: 23.3800
+Drift over test: 0.0200
+
+pressure_Pa
+Mean: 101614.4647
+Standard deviation: 3.7636
+Minimum: 101604.0500
+Maximum: 101622.2400
+Drift over test: -0.9000
+
+humidity_percent
+Mean: 40.4806
+Standard deviation: 1.5495
+Minimum: 38.0400
+Maximum: 42.8300
+Drift over test: 0.7800
+
