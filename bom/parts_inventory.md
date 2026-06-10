@@ -2,9 +2,9 @@
 
 | Part | Quantity | Arrived? | Tested? | Notes |
 |---|---:|---|---|---|
-| Microcontroller | 1 | Yes | No | |
+| Microcontroller | 1 | Yes | yes | | 
 | IMU sensor | 1 | Yes | No | |
-| Temperature/Pressure sensor | 1 | Yes | No | |
+| Temperature/Pressure sensor | 1 | Yes | yes | |
 | Voltage/Current sensor | 1 | Yes | No | |
 | Breadboard / Perma-Proto | 1 | Yes | No | |
 | Jumper wires | 1 pack | Yes | No | |
