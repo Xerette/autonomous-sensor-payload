@@ -85,7 +85,7 @@ Generated outputs are stored in:
 
 ```text
 data/processed/
-
+```
 ### BME280 60-Second Test Interpretation
 
 The initial 60-second BME280 test showed stable environmental sensing performance from the Raspberry Pi Pico W and SparkFun BME280 setup.
