@@ -31,28 +31,21 @@ The system uses microcontroller-based sensor logging, IMU/environmental sensing,
 
 ### In Progress
 
-- Interpret BME280 sensor stability using the generated plots and summary statistics.
+* Improve the sensor data logging workflow so CSV files can be captured more cleanly.
+* Prepare the project for longer-duration environmental sensor tests.
+* Add clearer documentation for test procedures and results.
 
 ### Upcoming
 
-* Add CSV logging.
+* Capture a longer BME280 dataset, such as 5 minutes instead of 60 seconds.
+* Add automated serial-to-CSV logging from the Pico W to the laptop.
 * Add IMU data collection when the IMU is available.
-* Analyze sensor noise, drift, calibration, and filtering.
+* Analyze sensor noise, drift, calibration, and filtering over longer test periods.
+* Add wiring diagrams and hardware photos.
 * Create KiCad schematic.
 * Run LTspice simulation.
 * Write final technical report.
 
-- [x] Created GitHub repository
-- [x] Set up project folder structure
-- [x] Created parts inventory file
-- [x] Verify all purchased components
-- [x] Complete microcontroller blink test
-- [x] Read first BME sensor data
-- [ ] Log sensor data to file
-- [ ] Analyze sensor data using Python
-- [ ] Create KiCad schematic
-- [ ] Run LTspice simulation
-- [ ] Write final technical report
 
 ## Tools and Skills
 
