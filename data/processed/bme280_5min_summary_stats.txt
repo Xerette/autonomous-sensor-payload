@@ -1,0 +1,28 @@
+BME280 Sensor Data Summary
+==========================
+
+Input file: data\raw\bme280_5min_serial_log.csv
+Samples: 300
+Duration: 300.00 seconds
+
+temperature_C
+Mean: 28.8979
+Standard deviation: 0.1679
+Minimum: 28.6300
+Maximum: 29.1400
+Drift over test: -0.3900
+
+pressure_Pa
+Mean: 101769.6811
+Standard deviation: 3.9603
+Minimum: 101746.2200
+Maximum: 101779.7100
+Drift over test: 5.6000
+
+humidity_percent
+Mean: 40.4098
+Standard deviation: 0.6821
+Minimum: 39.1800
+Maximum: 41.6600
+Drift over test: 0.6600
+
