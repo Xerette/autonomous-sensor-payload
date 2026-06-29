@@ -86,3 +86,15 @@ Generated outputs are stored in:
 ```text
 data/processed/
 
+### BME280 60-Second Test Interpretation
+
+The initial 60-second BME280 test showed stable environmental sensing performance from the Raspberry Pi Pico W and SparkFun BME280 setup.
+
+Temperature readings remained highly stable around room temperature, with only small variation over the test period. The measured temperature had a mean of 23.3603°C and a standard deviation of 0.0146°C, indicating very low short-term noise during the test.
+
+Pressure readings also remained stable. Although the pressure plot appears visually noisy because the y-axis is zoomed in, the measured variation was small relative to the atmospheric pressure value. The pressure data had a mean of 101614.4647 Pa and a standard deviation of 3.7636 Pa.
+
+Humidity showed the largest variation during the test. The humidity readings ranged from 38.04% to 42.83%, with a standard deviation of 1.5495%. This may be due to local airflow, nearby hand/body heat, breathing near the sensor, or short-term environmental changes around the test setup.
+
+Overall, this test confirms that the Pico W can reliably collect BME280 environmental data over I2C and that the first data acquisition, plotting, and summary-statistics workflow is functioning correctly.
+
