@@ -15,6 +15,7 @@ The system uses microcontroller-based sensor logging, IMU/environmental sensing,
 - Document the engineering process through test procedures, plots, and technical reports.
 
 ## Current Status
+
 ### Completed
 
 * Created GitHub repository and initial project structure.
@@ -27,7 +28,10 @@ The system uses microcontroller-based sensor logging, IMU/environmental sensing,
 * Successfully read temperature, pressure, and humidity data from the BME280 sensor.
 * Verified environmental sensor data output through Thonny using MicroPython.
 * Streamed BME280 temperature, pressure, and humidity readings in CSV format for easier data logging and analysis.
+* Captured a 60-second BME280 environmental sensor dataset in CSV format.
+* Generated Python plots for BME280 temperature, pressure, and humidity over time.
 * Calculated basic summary statistics for the 60-second BME280 dataset, including mean, standard deviation, minimum, maximum, and drift.
+* Interpreted initial BME280 sensor stability using generated plots and summary statistics.
 
 ### In Progress
 
@@ -45,6 +49,7 @@ The system uses microcontroller-based sensor logging, IMU/environmental sensing,
 * Create KiCad schematic.
 * Run LTspice simulation.
 * Write final technical report.
+
 
 
 ## Tools and Skills
