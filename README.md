@@ -123,6 +123,15 @@ Humidity showed the strongest response to the disturbance. The baseline humidity
 
 Pressure remained comparatively stable throughout the test. The pressure means were 101750.5593 Pa during baseline, 101747.2329 Pa during the hand-near phase, and 101747.4288 Pa during recovery. This is expected because the hand-near test should primarily affect temperature and humidity, not room pressure.
 
+```markdown
+## Hardware Documentation
+
+BME280 wiring notes and setup photos are available in:
+
+```text
+docs/bme280_wiring.md
+docs/progress_photos/
+
 Overall, this test shows that the BME280 can detect local environmental changes, especially humidity changes, but the test setup needs more controlled conditions for repeatable response measurements. Future tests should use a fixed sensor position, consistent hand distance, and possibly repeated trials to compare response and recovery behavior more reliably.
 
 
