@@ -130,6 +130,25 @@ BME280 wiring notes and setup photos are available in:
 ```text
 docs/bme280_wiring.md
 docs/progress_photos/
+```
+### BME280 Thermal/Humidity Response Test — Trial 2
+
+A second controlled thermal/humidity response test was performed to improve repeatability compared with the first trial. The same three-segment structure was used:
+
+* 0–60 s: baseline room condition
+* 60–120 s: hand held near the sensor without touching it
+* 120–300 s: recovery period
+
+The second trial collected 285 samples over 300 seconds. The small difference between expected and captured samples suggests that some serial rows may have been skipped during logging, which will be improved in future versions of the logging workflow.
+
+Temperature increased during the hand-near phase. The baseline temperature mean was 21.9904°C, while the hand-near mean increased to 22.3030°C. During recovery, the temperature mean remained slightly elevated at 22.3259°C, suggesting that the nearby air and sensor setup retained some heat after the hand was removed.
+
+Humidity showed the clearest controlled response. The baseline humidity mean was 54.4105%, increasing to 58.4402% during the hand-near phase. During recovery, the humidity mean decreased back to 54.8098%, close to the original baseline. This indicates that the BME280 was able to detect the local humidity disturbance and then return toward baseline after the disturbance was removed.
+
+Pressure remained comparatively stable and was not strongly affected by the hand-near test. The pressure means were 101710.8098 Pa during baseline, 101715.6933 Pa during the hand-near phase, and 101713.5774 Pa during recovery.
+
+Overall, Trial 2 produced a cleaner and more interpretable response than Trial 1, especially for humidity. This supports the use of controlled test segments for evaluating sensor response and recovery behavior.
+
 
 Overall, this test shows that the BME280 can detect local environmental changes, especially humidity changes, but the test setup needs more controlled conditions for repeatable response measurements. Future tests should use a fixed sensor position, consistent hand distance, and possibly repeated trials to compare response and recovery behavior more reliably.
 
