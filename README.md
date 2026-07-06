@@ -108,3 +108,30 @@ The humidity data had a mean of 40.4098% and a standard deviation of 0.6821%. Hu
 
 This checkpoint improved the project workflow by replacing manual Thonny copy/paste logging with an automated laptop-side serial capture script. The system can now collect longer datasets more reliably and process them with reusable Python analysis tools.
 
+
+### BME280 Thermal/Humidity Response Test
+
+A controlled 5-minute response test was performed to observe how the BME280 reacts to a local environmental disturbance. The test was divided into three segments:
+
+* 0–60 s: baseline room condition
+* 60–120 s: hand held near the sensor without touching it
+* 120–300 s: recovery period after removing the hand
+
+The temperature readings showed a measurable response. The baseline temperature mean was 23.4623°C, increasing slightly to 23.5668°C during the hand-near phase. During the recovery period, the temperature mean increased further to 24.2143°C. This suggests that the sensor and surrounding air continued warming after the hand was removed, likely due to delayed thermal response or heat transfer into the local test setup.
+
+Humidity showed the strongest response to the disturbance. The baseline humidity mean was 51.4295%, increasing to 54.0188% during the hand-near phase and 57.2530% during recovery. The continued increase during the recovery window suggests that moisture and heat introduced near the sensor affected the local environment for longer than the direct hand-near period.
+
+Pressure remained comparatively stable throughout the test. The pressure means were 101750.5593 Pa during baseline, 101747.2329 Pa during the hand-near phase, and 101747.4288 Pa during recovery. This is expected because the hand-near test should primarily affect temperature and humidity, not room pressure.
+
+```markdown
+## Hardware Documentation
+
+BME280 wiring notes and setup photos are available in:
+
+```text
+docs/bme280_wiring.md
+docs/progress_photos/
+
+Overall, this test shows that the BME280 can detect local environmental changes, especially humidity changes, but the test setup needs more controlled conditions for repeatable response measurements. Future tests should use a fixed sensor position, consistent hand distance, and possibly repeated trials to compare response and recovery behavior more reliably.
+
+
