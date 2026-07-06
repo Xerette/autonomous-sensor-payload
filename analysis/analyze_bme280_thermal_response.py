@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-INPUT_PATH = Path("data/raw/bme280_thermal_response_5min.csv")
+INPUT_PATH = Path("data/raw/bme280_thermal_response_trial2_5min.csv")
 OUTPUT_DIR = Path("data/processed")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 

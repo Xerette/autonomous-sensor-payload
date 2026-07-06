@@ -1,0 +1,45 @@
+BME280 Thermal Response Test Summary
+===================================
+
+Input file: data\raw\bme280_thermal_response_trial2_5min.csv
+Samples: 285
+Duration: 300.00 seconds
+
+Test segments:
+0-60 s: baseline room condition
+60-120 s: hand held near sensor
+120-300 s: recovery
+
+temperature_C
+Baseline mean: 21.9904
+Hand-near mean: 22.3030
+Recovery mean: 22.3259
+Baseline std: 0.0356
+Hand-near std: 0.2323
+Recovery std: 0.1830
+Overall min: 21.9100
+Overall max: 22.7000
+Overall drift: 0.1100
+
+pressure_Pa
+Baseline mean: 101710.8098
+Hand-near mean: 101715.6933
+Recovery mean: 101713.5774
+Baseline std: 4.7782
+Hand-near std: 6.4420
+Recovery std: 5.7080
+Overall min: 101696.2600
+Overall max: 101728.9800
+Overall drift: 19.0600
+
+humidity_percent
+Baseline mean: 54.4105
+Hand-near mean: 58.4402
+Recovery mean: 54.8098
+Baseline std: 0.2715
+Hand-near std: 1.7713
+Recovery std: 1.5550
+Overall min: 53.5800
+Overall max: 60.1500
+Overall drift: -0.9100
+
