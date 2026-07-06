@@ -32,12 +32,11 @@ The system uses microcontroller-based sensor logging, IMU/environmental sensing,
 * Generated Python plots for BME280 temperature, pressure, and humidity over time.
 * Calculated basic summary statistics for the 60-second BME280 dataset, including mean, standard deviation, minimum, maximum, and drift.
 * Interpreted initial BME280 sensor stability using generated plots and summary statistics.
-
+* Added robust Pico W logger firmware with basic I2C error handling and onboard LED status indication.
+  
 ### In Progress
 
-* Improve the sensor data logging workflow so CSV files can be captured more cleanly.
-* Prepare the project for longer-duration environmental sensor tests.
-* Add clearer documentation for test procedures and results.
+* Continue improving reliability of longer sensor logging tests.
 
 ### Upcoming
 
