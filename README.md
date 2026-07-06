@@ -96,3 +96,15 @@ Humidity showed the largest variation during the test. The humidity readings ran
 
 Overall, this test confirms that the Pico W can reliably collect BME280 environmental data over I2C and that the first data acquisition, plotting, and summary-statistics workflow is functioning correctly.
 
+### BME280 5-Minute Automated Logging Test
+
+A longer 5-minute BME280 dataset was captured using the automated serial-to-CSV logging workflow. This test collected 300 samples over 300 seconds from the Raspberry Pi Pico W and SparkFun BME280 sensor.
+
+The temperature data had a mean of 28.8979°C with a standard deviation of 0.1679°C. The temperature decreased by 0.3900°C over the test, suggesting a small thermal drift or local environmental change during the run.
+
+The pressure data remained highly stable, with a mean of 101769.6811 Pa and a standard deviation of 3.9603 Pa. Compared with the total atmospheric pressure value, this variation is very small, indicating stable pressure measurement behavior during the test.
+
+The humidity data had a mean of 40.4098% and a standard deviation of 0.6821%. Humidity drifted upward by 0.6600% over the 5-minute test. Compared with the earlier 60-second test, the 5-minute humidity readings showed more stable behavior overall.
+
+This checkpoint improved the project workflow by replacing manual Thonny copy/paste logging with an automated laptop-side serial capture script. The system can now collect longer datasets more reliably and process them with reusable Python analysis tools.
+
