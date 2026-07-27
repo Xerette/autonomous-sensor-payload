@@ -10,4 +10,4 @@ while True:
     gyrox, gyroy, gyroz = bmi.gyro
     print("accel: x={:.2f} y={:.2f} z={:.2f} m/s2 | gyro: x={:.2f} y={:.2f} z={:.2f} deg/s".format(
         accx, accy, accz, gyrox, gyroy, gyroz))
-    time.sleep(0.5)
+    time.sleep(0.5) 
